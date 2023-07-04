@@ -1,0 +1,126 @@
+/**
+  |============================
+  | General settings
+  |============================
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts family */
+    --main-fonts: "Inter", sant-sarif;
+    --secondary-fonts: "Readex pro", sant-sarif;
+    /*  Colors */
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+/**
+  |============================
+  | Generals class
+  |============================
+*/
+
+.container {
+    width: 1440px;
+    padding: 0px 75px;
+    margin: 0 auto;
+
+    outline: 1px solid green;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.btn {
+    cursor: pointer;
+}
+/**
+  |============================
+  | Header site
+  |============================
+*/
+
+.header-list {
+    display: flex;
+    align-items: center;
+
+    min-height: 80px;
+}
+
+.logo-site {
+    margin-right: 285px;
+}
+
+.nav-site {
+    margin-right: 285px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+}
+
+.nav-item {
+
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+}
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+
+}
+
+.btn-item {
+
+}
+
+.header-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.header-icon {
+  stroke: black;
+  fill: aliceblue;
+}
+
+/**
+  |============================
+  | Banner site
+  |============================
+*/
