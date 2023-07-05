@@ -18,7 +18,24 @@ html {
     --main-fonts: "Inter", sant-sarif;
     --secondary-fonts: "Readex pro", sant-sarif;
     /*  Colors */
+    --main-color: rgba(0, 0, 0, 1);
+    --secondary-color: #4B4B4B;
 
+    --bgr-color-banner: rgba(211, 211, 211, 0.7);
+
+    /* Width element container */
+        --indent: 28px;
+        --items: 4;
+
+}
+body {
+    font-family: var(--main-fonts);
+    font-size: px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.2;
+
+    color: var(--main-color); 
 }
 
 h1,
@@ -46,8 +63,10 @@ img {
     width: 1440px;
     padding: 0px 75px;
     margin: 0 auto;
-
-    outline: 1px solid green;
+    
+}
+.section {
+    padding: 30px 0px;
 }
 
 .link {
@@ -59,7 +78,37 @@ img {
 }
 
 .btn {
+    font-family: inherit;
     cursor: pointer;
+}
+.section-title {
+    margin-bottom: 9px;
+
+    font-family: var(--secondary-fonts);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.section-subtitle {
+    margin-bottom: 55px;
+
+    font-family: var(--secondary-fonts);
+    font-size: 14px;
+
+    text-align: center;
+}
+/* width flex element */
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-set-item {
+    width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 /**
   |============================
@@ -86,7 +135,6 @@ img {
     display: flex;
     align-items: center;
     gap: 33px;
-
 }
 
 .nav-item {
@@ -94,15 +142,16 @@ img {
 }
 
 .nav-link {
+    font-size: 14px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 1);
+
+    color: var(--main-color);
 }
 
 .btn-list {
     display: flex;
     align-items: center;
     gap: 21px;
-
 }
 
 .btn-item {
@@ -124,3 +173,381 @@ img {
   | Banner site
   |============================
 */
+.banner-section {
+    margin-bottom: 56px;
+}
+.banner-blok {
+    display: flex;
+
+    border-radius: 20px;
+
+    background-color: var(--bgr-color-banner);
+}
+
+.banner-text {
+    margin-left: 56px;
+    margin-top: 145px;
+    min-width: 607px;
+}
+
+.banner-titli {
+    margin-bottom: 19px;
+    width: 588px;
+
+    font-family: var(--secondary-fonts);
+    font-weight: 400;
+    font-size: 58px;
+}
+
+.banner-subtitle {
+    margin-bottom: 30px;
+    width: 565px;
+
+    font-size: 16px;
+}
+
+.banner-button {
+    margin-bottom: 127px;
+    padding: 14px 53px;
+    border-radius: 50px;
+    border: 1px solid var(--main-color);
+
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    background-color: var(--bgr-color-banner);
+}
+
+.banner-img {
+    margin-right: 30px;
+}
+
+/**
+  |============================
+  | Novelty section
+  |============================
+*/
+.novelty-subtitle {
+    width: 628px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.novelty-box {
+    display: flex;
+    gap: 16px;
+
+}
+.novelty-card {
+    margin-bottom: 72px;
+
+    background-color: white;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+}
+.novelty-img {
+    margin: 0px 97px 0px 42px;
+}
+.novelty-text {
+    margin-right: 42px;
+
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: right;
+        
+}
+.novelty-title {
+    margin-right: 42px;
+
+    font-family: var(--secondary-fonts);
+    font-size: 32px;
+    text-align: right; 
+}
+.novelty-card-two {
+    display: flex;
+    margin-bottom: 0;
+}
+.card-two {
+    padding-top: 87px;
+}
+.card-three {
+    padding-top: 144px;
+    margin-bottom: 0;
+
+    text-align: center;
+}
+.card-three .novelty-text {
+    margin-top: 41px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.card-three .novelty-title {
+    text-align: center;
+}
+.card-four {
+    padding-top: 141px;
+    margin-bottom: 0;
+}
+.card-four .novelty-text {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-four .novelty-title {
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+/**
+  |============================
+  | Popular section
+  |============================
+*/
+.popular-header {
+    
+}
+.popular-subtitle {
+    margin-bottom: 35px;
+}
+.popular-list {
+    display: flex;
+    gap: 28px;
+}
+.popular-card {
+  
+}
+
+.popular-img {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 37px;
+}
+
+.popular-title {
+    margin-bottom: 9px;
+
+    font-family: var(--secondary-fonts);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.25; 
+}
+
+.popular-text {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.popular-number {
+    margin-bottom: 27px;
+
+    font-size: 18px;
+}
+
+/**
+  |============================
+  | Best section
+  |============================
+*/
+
+.best-list {
+    --items: 3;   
+}
+
+.best-card {
+    padding: 41px 0px 28px 0px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.best-text {
+    font-family: var(--secondary-fonts);
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.best-title {
+    margin-bottom: 30px;
+
+    font-family: var(--secondary-fonts);
+    font-size: 28px;
+    line-height: 1.25;   
+        
+}
+
+.best-btn {
+    margin-bottom: 30px;
+    padding: 14px 63px;
+
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    border-radius: 50px;            
+}
+
+/**
+  |============================
+  | Ideals section
+  |============================
+*/
+
+.ideals-box {
+    display: flex;
+    gap: 35px;
+
+    padding-bottom: 50px;
+}
+
+.ideals-img {}
+
+.ideals-text {}
+
+.ideals-link {
+    display: inline-block;
+    margin-bottom: 28px;
+
+    font-family: var(--main-fonts);
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--main-color);
+}
+
+/**
+  |============================
+  | Search section
+  |============================
+*/
+
+.filter-input-box {
+    position: relative;
+}
+
+.filter-input {
+    display: block;
+    padding-left: 65px;
+    margin: 0px auto 18px;
+    width: 650px;
+    height: 60px;
+
+    border-radius: 50px;
+    border: 1px solid #C5C5C5;
+    background-color: white;
+
+    outline: none;
+}
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    transform: translateY(-50%);
+
+    stroke: #C5C5C5;
+    fill: white;
+}
+
+.list-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+
+    width: 640px;
+    margin: 0px auto 68px;
+}
+
+.filter-btn {
+    padding: 12px 22px;
+    border-radius: 50px;
+    border: 1px solid #C5C5C5;
+    background-color: white;
+}
+
+.search-card {
+    max-width: 965px;
+    margin: 0 auto;
+    padding: 47px 0px;
+    
+    border-radius: 20px;
+    background-color: var(--bgr-color-banner)
+}
+
+.search-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.search-input {
+    width: 285px;
+    height: 50px;
+    padding-left: 32px;
+    border-radius: 50px 0px 0px 50px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 15px 32px;
+    border-radius: 0px 50px 50px 0px;
+    border-right: transparent;
+
+    font-size: 14px;
+    line-height: 1.2;
+    color: #FFF;
+    background-color:black;
+}
+
+/**
+  |============================
+  | Footer site
+  |============================
+*/
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 140px;
+}
+
+.footer-box {
+    display: flex;
+}
+
+.footer-text {
+    width: 304px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.footer-logo-card {
+    min-width: 394px;
+}
+
+.footer-items {
+    width: 100%;
+}
+
+.list-title {
+    margin-bottom: 20px;
+
+    font-family: var(--secondary-fonts);
+    font-size: 22px;
+    line-height: 1.25;
+}
+
+.footer-list {
+    margin-bottom: 14px;
+
+    font-size: 18px; 
+}
+
+
